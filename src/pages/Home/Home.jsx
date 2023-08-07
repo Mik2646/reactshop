@@ -7,9 +7,9 @@ import axios from 'axios';
 
 
 
-const wrapItem = ()=>{
+// const wrapItem = ()=>{
 
-}
+// }
 
 const Home = () => {
 
@@ -20,7 +20,7 @@ const Home = () => {
     })
   },[]);
    const wrapItem = shop.map((item)=> 
-   <WrapItem key={item.id} padding={7} boxShadow={10}>
+   <WrapItem key={item.id} padding={7} boxShadow={10} >
     < ShopCard  id={item.id} name={item.name} photo={item.photo}/>
  </WrapItem>
    );
